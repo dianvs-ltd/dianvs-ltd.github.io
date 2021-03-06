@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+{%- if page.title -%}
+    <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+{%- else -%}
+    <title>{{ site.title | escape }}</title>
+{%- endif -%}
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+{%- if page.keywords -%}
+<meta name="keywords" content="{{page.keywords}}">
+{%- endif -%}
+{%- if page.description -%}
+<meta name="description" content="{{page.description}}">
+{%- endif -%}
+
+{%- if site.author -%}
+    <meta name="author" content="{{ site.author | escape }}">
+{%- endif -%}
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
+
+<style>
+    body , * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+</style>

@@ -1,0 +1,158 @@
+<div class="body-nav">
+    <div class="page_nav">
+        <div class="page_nav_sub">
+            <a class="page_nav_sub_name" href="{{site.baseurl}}/">全部</a>
+        </div>
+        <div class="page_nav_sub">
+            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/1.html">店卫士帮助文档第一篇</a>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .body-nav {
+        width: 266px;
+
+        display: block;
+        min-height: 100px;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        padding: 50px 9px;
+    }
+
+    .page_nav {
+        border-top: 1px solid #e9e9e9;
+    }
+
+    .page_nav {
+        border-top: 1px solid #e9e9e9;
+    }
+
+    .page_nav_item {
+
+    }
+
+    .page_nav_label {
+        height: 50px;
+
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 79px;
+
+        padding-left: 20px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #e9e9e9;
+
+        cursor: pointer;
+
+    }
+
+    .page_nav_ico {
+        width: 17px;
+        height: 9px;
+    }
+
+    .page_nav_ico_expand {
+        width: 17px;
+        height: 9px;
+
+        transform: rotate(180deg);
+    }
+
+    .page_nav_sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        border-bottom: 1px solid #e9e9e9;
+
+    }
+
+    .page_nav_sub_name {
+        width: 248px;
+        height: 36px;
+        background: #ffffff;
+        border-radius: 3px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-size: 14px;
+        color: #999999;
+        line-height: 78px;
+
+        padding-left: 40px;
+
+        margin: 7px 0;
+    }
+
+    .page_nav_sub_name:before {
+        content: ' ';
+        display: block;
+        width: 6px;
+        height: 6px;
+        background: #999999;
+        margin-right: 9px;
+
+        flex-shrink: 0;
+
+        border-radius: 3px;
+    }
+
+    .page_nav_sub_name_active {
+        width: 248px;
+        height: 36px;
+        background: #F0F7FF;
+        border-radius: 3px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-size: 14px;
+        color: #4685CE;
+        line-height: 78px;
+
+        padding-left: 40px;
+
+        margin: 7px 0;
+    }
+
+    .page_nav_sub_name_active:before {
+        content: ' ';
+        display: block;
+        width: 6px;
+        height: 6px;
+        background: #4685CE;
+
+        margin-right: 9px;
+
+        flex-shrink: 0;
+        border-radius: 3px;
+    }
+
+
+</style>

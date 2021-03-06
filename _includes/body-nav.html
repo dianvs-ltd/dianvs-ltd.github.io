@@ -1,0 +1,59 @@
+<div class="page-body">
+
+    <div class="doc-header">
+        <a href="https://dianvs.com/video.html"><img src="{{site.baseurl}}/assets/doc/tl.png" class="doc-header-png"/></a>
+        <a href="https://doc.dianvs.com/"><img src="{{site.baseurl}}/assets/doc/tr.png" class="doc-header-png"/></a>
+    </div>
+
+    <div class="body-inner">
+        {%- include nav.html -%}
+
+        <section class="normal markdown-section">
+            {{ content }}
+        </section>
+    </div>
+
+</div>
+<style>
+    .page-body{
+
+        width: 1200px;
+
+        background: #ffffff;
+
+        margin: 0 auto;
+
+        padding-top: 30px;
+
+    }
+
+    .body-inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .markdown-section{
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        padding: 40px 30px;
+
+
+    }
+
+    .doc-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doc-header-png{
+        display: block;
+        width:200px ;
+        height: 46px;
+        cursor: pointer;
+    }
+</style>
