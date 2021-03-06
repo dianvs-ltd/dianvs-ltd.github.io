@@ -1,0 +1,120 @@
+<div class="page-body">
+
+    <div class="doc-header">
+        <a href="{{site.baseurl}}/video.html"><img src="{{site.baseurl}}/assets/video/t-l.png" class="doc-header-png"/></a>
+        <a href="{{site.baseurl}}"><img src="{{site.baseurl}}/assets/video/t-r.png" class="doc-header-png"/></a>
+    </div>
+
+
+    <div class="body-inner">
+
+        <div class="b-v-title">
+            {{page.title}}
+        </div>
+
+        <div class="iframe-w">
+            <iframe class="iframe" width=800 height=540 src="{{page.video_url}}"
+                    scrolling="no" frameborder="0" frame-border="no"
+                    frame-spacing="0"
+                    allow-full-screen></iframe>
+        </div>
+
+
+        <div class="b-v-btns">
+        <div class="b-v-btn">
+            {%- if page.prev -%}
+            <a class="b-v-prev" href="{{page.prev_url}}">上一个：{{page.prev}}</a>
+            {%- endif -%}
+        </div>
+        <div class="b-v-btn">
+            {%- if page.next -%}
+            <a class="b-v-next" href="{{page.next_url}}">下一个：{{page.next}}</a>
+            {%- endif -%}
+        </div>
+    </div>
+    </div>
+
+</div>
+<style>
+    .page-body{
+
+        width: 1200px;
+
+        background: #ffffff;
+
+        margin: 0 auto;
+
+        padding-top: 30px;
+
+    }
+
+
+
+    .doc-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doc-header-png{
+        display: block;
+        width:200px ;
+        height: 46px;
+        cursor: pointer;
+    }
+
+    .body-inner{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .iframe-w{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+    .iframe{
+        margin: 0 auto;
+    }
+
+    .b-v-title{
+
+        color: #404040;
+        font-size: 24px;
+        text-align: left;
+        line-height: 34px;
+
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #EEE;
+        margin-bottom: 20px;
+
+        padding-top: 20px;
+
+    }
+
+
+    .b-v-btns {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 20px;
+
+        padding-bottom: 30px;
+    }
+
+
+    .b-v-btns a {
+        font-size: 12px;
+        color: #666;
+
+        text-decoration: none;
+    }
+
+
+</style>

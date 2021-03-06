@@ -3,8 +3,8 @@ layout: home
 ---
 
 <div class="doc-header">
-        <a href="https://dianvs.com/video.html"><img src="{{site.baseurl}}/assets/doc/tl.png" class="doc-header-png"/></a>
-        <a href="https://doc.dianvs.com"><img src="{{site.baseurl}}/assets/doc/tr.png" class="doc-header-png"/></a>
+    <a href="{{site.baseurl}}/video.html"><img src="{{site.baseurl}}/assets/doc/tl.png" class="doc-header-png"/></a>
+    <a href="{{site.baseurl}}"><img src="{{site.baseurl}}/assets/doc/tr.png" class="doc-header-png"/></a>
 </div>
 
  {%- include nav.html -%} 
