@@ -9,7 +9,7 @@ page_excerpts: true
 # 安装店卫士 + 配置Luminati
 
 ## 第一步 下载安装文件
-## dianvs目前支持windows系统和mac系统，下载地址：https://dianvs.com/download
+dianvs目前支持windows系统和mac系统，下载地址：https://dianvs.com/download
 
 ### ![店卫士下载]({{site.baseurl}}/assets/dianvs-download.jpg)
 
