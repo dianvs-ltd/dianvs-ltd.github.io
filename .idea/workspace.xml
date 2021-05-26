@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e0974e2-4d8e-4b37-b620-1a4b8e6f1241" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/21.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/21.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/22.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/22.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/23.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/23.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/24.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/24.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/25.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/25.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/26.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/26.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/27.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/27.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/28.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/28.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/config.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/config.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +196,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
