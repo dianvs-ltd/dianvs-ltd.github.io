@@ -78,7 +78,7 @@
 
 
 <script>
-	setTimeout(() => {
+	window.addEventListener('load',() => {
 		var pathname = window.location.pathname;
 
 		document.querySelectorAll('a').forEach(el => {
@@ -122,9 +122,9 @@
 			});
 
 		})
+		console.log('init')
+	}, false)
 
-	}, 200)
-	console.log('init')
 </script>
 
 <style>
