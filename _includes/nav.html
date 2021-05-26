@@ -12,49 +12,95 @@
         <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/3.html">跨境电商企业为什么都需要用店卫士</a>
         </div>
-          <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="">防关联技术</a>
             <div class="page_nav">
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/10.html">跨境防关联，看这一篇就够了</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/20.html">跨境店铺防关联-储存选项</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/21.html">跨境店铺防关联-时区篇</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/22.html">跨境店铺防关联-硬件指纹：WebGL篇</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/23.html">跨境店铺防关联-硬件指纹：AudioContext</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/24.html">跨境防关联-硬件指纹: Canvas篇</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/25.html">跨境防关联-媒体设备篇</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/26.html">跨境防关联-javascript篇</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/27.html">跨境店铺防关联-字体篇</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/28.html">跨境店铺防关联-地理位置</a>
-        </div>
-        <div class="page_nav_sub">
-            <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/29.html">跨境店铺防关联-WebRTC篇</a>
-        </div>
-              </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/10.html">跨境防关联，看这一篇就够了</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/20.html">跨境店铺防关联-储存选项</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/21.html">跨境店铺防关联-时区篇</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/22.html">跨境店铺防关联-硬件指纹：WebGL篇</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/23.html">跨境店铺防关联-硬件指纹：AudioContext</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/24.html">跨境防关联-硬件指纹: Canvas篇</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/25.html">跨境防关联-媒体设备篇</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/26.html">跨境防关联-javascript篇</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/27.html">跨境店铺防关联-字体篇</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/28.html">跨境店铺防关联-地理位置</a>
+                </div>
+                <div class="page_nav_sub">
+                    <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/29.html">跨境店铺防关联-WebRTC篇</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
+    setTimeout(() => {
+        var pathname = window.location.pathname;
 
+        document.querySelectorAll('a').forEach(el => {
+            // console.log();
+            if (!el.attributes['href'].value) {
+                el.href = 'javascript:void(0);'
+            }
+        })
+
+        document.querySelectorAll('.page_nav').forEach(el => {
+            // console.log(el)
+            let hasSub = el.querySelectorAll('.page_nav');
+            if (hasSub.length) {
+                return
+            }
+
+            el.parentElement.addEventListener('click', (e) => {
+                // console.log(e);
+                // console.log(e.currentTarget);
+                let nel = e.currentTarget;
+                console.log(nel.getAttribute('class'))
+                if (nel.getAttribute('class').indexOf('opened') > -1) {
+                    nel.setAttribute('class', `page_nav_sub closed`);
+                } else {
+                    nel.setAttribute('class', `page_nav_sub opened`);
+                }
+            })
+
+            el.querySelectorAll('a').forEach(a_el => {
+                if (a_el.href.endsWith(pathname)) {
+                    let pNav = a_el.parentElement.parentElement.parentElement;
+                    if (pNav.getAttribute('class').indexOf('page_nav_sub') > -1) {
+                        let classes = pNav.getAttribute('class');
+                        pNav.setAttribute('class', `${classes} opened`);
+                    }
+                } else {
+                    let pNav = a_el.parentElement.parentElement.parentElement;
+                    let classes = pNav.getAttribute('class');
+                    pNav.setAttribute('class', `${classes} closed`);
+                }
+            });
+
+        })
+
+    }, 200)
+    console.log('init')
 </script>
 
 <style>
@@ -198,14 +244,55 @@
     }
 
 
-    .page_nav .page_nav{
+    .page_nav .page_nav {
         padding-left: 20px;
+        display: none;
     }
 
-    .page_nav .page_nav .page_nav_sub_name{
+    .page_nav .page_nav .page_nav_sub_name {
         width: 280px;
     }
 
+    .page_nav_sub.opened .page_nav {
+        display: block;
+    }
+
+    .page_nav_sub.opened > .page_nav_sub_name:after {
+        content: ' ';
+        display: block;
+
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid black;
+
+        flex-shrink: 0;
+
+        border-radius: 3px;
+
+        position: absolute;
+        right: 60px;
+        top: 16px;
+    }
+
+    .page_nav_sub.closed > .page_nav_sub_name:after {
+        content: ' ';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid black;
+
+        transform: rotate(180deg);
+
+        flex-shrink: 0;
+
+        border-radius: 3px;
+
+        position: absolute;
+        right: 60px;
+        top: 16px;
+    }
 
 
 </style>

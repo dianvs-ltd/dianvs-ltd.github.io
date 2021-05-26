@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/23.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/23.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/24.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/24.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/29.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/29.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +166,7 @@
       <workItem from="1615010150196" duration="4479000" />
       <workItem from="1615016528524" duration="2080000" />
       <workItem from="1622024514582" duration="29000" />
-      <workItem from="1622024555083" duration="3025000" />
+      <workItem from="1622024555083" duration="5185000" />
     </task>
     <servers />
   </component>
