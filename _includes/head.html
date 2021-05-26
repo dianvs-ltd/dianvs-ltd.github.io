@@ -2,12 +2,12 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
 {%- if page.title -%}
-    <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+<title>{{ page.title | escape }} · {{ site.title | escape }}</title>
 {%- else -%}
-    <title>{{ site.title | escape }}</title>
+<title>{{ site.title | escape }}</title>
 {%- endif -%}
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 {%- if page.keywords -%}
 <meta name="keywords" content="{{page.keywords}}">
 {%- endif -%}
@@ -16,7 +16,7 @@
 {%- endif -%}
 
 {%- if site.author -%}
-    <meta name="author" content="{{ site.author | escape }}">
+<meta name="author" content="{{ site.author | escape }}">
 {%- endif -%}
 
 <meta name="HandheldFriendly" content="true"/>
@@ -26,68 +26,171 @@
 <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
 
 <style>
-    .markdown-section  { position: relative; }
+    .markdown-section {
+        position: relative;
+    }
 
-    .markdown-section  h1 { margin: 30px 0; }
+    .markdown-section h1 {
+        margin: 30px 0;
+    }
 
-    .markdown-section  h1 a { position: relative; padding: 10px 0; color: #262b30; }
+    .markdown-section h1 a {
+        position: relative;
+        padding: 10px 0;
+        color: #262b30;
+    }
 
-    .markdown-section  h1 a:hover { color: #007cc3; }
+    .markdown-section h1 a:hover {
+        color: #007cc3;
+    }
 
-    .markdown-section  h2 { font: 600 14px 'Open Sans', Serif; color: #D5D5D5; text-transform: capitalize; }
+    .markdown-section h2 {
+        font: 600 14px 'Open Sans', Serif;
+        /*color: #D5D5D5;*/
+        text-transform: capitalize;
+        margin: 15px 0;
+    }
 
-    .markdown-section  i { margin: 0 5px; }
+    .markdown-section i {
+        margin: 0 5px;
+    }
 
-    .markdown-section  span { color: #b6b6b6; font-size: 12px; }
+    .markdown-section span {
+        color: #b6b6b6;
+        font-size: 12px;
+    }
 
-    .markdown-section  p { margin: 30px 0 0; }
+    .markdown-section p {
+        margin: 30px 0 0;
+    }
 
-    .markdown-section hr { height: 3px; }
+    .markdown-section hr {
+        height: 3px;
+    }
 
-    .markdown-section .feature { display: none; }
+    .markdown-section .feature {
+        display: none;
+    }
 
-    .markdown-section .warning { color: #8a6d3b; background-color: #fcf8e3; border-color: #faebcc; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; }
+    .markdown-section .warning {
+        color: #8a6d3b;
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
 
-    .posts .post.featured .feature { position: absolute; right: 0; display: inline-block; padding: 7px 15px; background: #fff; color: #78a300; border-radius: 4px; }
+    .posts .post.featured .feature {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        padding: 7px 15px;
+        background: #fff;
+        color: #78a300;
+        border-radius: 4px;
+    }
 
-    .posts .post.featured .feature:hover span { display: inline; opacity: 1; }
+    .posts .post.featured .feature:hover span {
+        display: inline;
+        opacity: 1;
+    }
 
-    .posts .post.featured .feature span { color: #78a300; margin-right: 15px; opacity: 0; }
+    .posts .post.featured .feature span {
+        color: #78a300;
+        margin-right: 15px;
+        opacity: 0;
+    }
 
-    @media screen and (max-width: 595px) { .posts .post.featured .feature span { display: none; } }
-    .markdown-section section { margin: 0 0 30px; }
+    @media screen and (max-width: 595px) {
+        .posts .post.featured .feature span {
+            display: none;
+        }
+    }
 
-    .markdown-section section > p:first-child { margin: 40px 0 30px; font-weight: 600; color: #1d1d1d; }
+    .markdown-section section {
+        margin: 0 0 30px;
+    }
 
-    .markdown-section section ul, .markdown-section section ol { margin: 30px 0 0 6%; padding: 0; line-height: 38px; }
+    .markdown-section section > p:first-child {
+        margin: 40px 0 30px;
+        font-weight: 600;
+        color: #1d1d1d;
+    }
 
-    .markdown-section section ul li, .markdown-section section ol li { padding: 0 0 0 3%; margin: 10px 0; }
+    .markdown-section section ul, .markdown-section section ol {
+        margin: 30px 0 0 6%;
+        padding: 0;
+        line-height: 38px;
+    }
 
-    .markdown-section section ul li { list-style: square; }
+    .markdown-section section ul li, .markdown-section section ol li {
+        padding: 0 0 0 3%;
+        margin: 10px 0;
+    }
 
-    .markdown-section section .container { position: relative; }
+    .markdown-section section ul li {
+        list-style: square;
+    }
 
-    .markdown-section section .container .reference { position: absolute; top: 0; left: -175px; width: 150px; padding: 20px 0 10px; border-top: 1px solid #dcd8d5; border-bottom: 1px solid #dcd8d5; text-align: right; }
+    .markdown-section section .container {
+        position: relative;
+    }
 
-    @media screen and (max-width: 1140px) { .markdown-section section .container .reference { position: static; width: 100%; border-top: 0; padding: 10px 0; } }
-    .markdown-section section .container strong { font: 600 14px "Open Sans", Serif; }
+    .markdown-section section .container .reference {
+        position: absolute;
+        top: 0;
+        left: -175px;
+        width: 150px;
+        padding: 20px 0 10px;
+        border-top: 1px solid #dcd8d5;
+        border-bottom: 1px solid #dcd8d5;
+        text-align: right;
+    }
 
-    .markdown-section section .container p { margin: 10px 0; font: 400 12px 'Open Sans', Serif; line-height: 24px; }
+    @media screen and (max-width: 1140px) {
+        .markdown-section section .container .reference {
+            position: static;
+            width: 100%;
+            border-top: 0;
+            padding: 10px 0;
+        }
+    }
 
-    .markdown-section section .container img:first-child, .markdown-section section .container pre:first-child { margin: 0; }
+    .markdown-section section .container strong {
+        font: 600 14px "Open Sans", Serif;
+    }
 
-    .markdown-section footer { overflow: hidden; padding: 0; margin: 30px 0; }
+    .markdown-section section .container p {
+        margin: 10px 0;
+        font: 400 12px 'Open Sans', Serif;
+        line-height: 24px;
+    }
 
-    .markdown-section footer ul { margin: 30px 0; padding: 0; list-style: none; }
+    .markdown-section section .container img:first-child, .markdown-section section .container pre:first-child {
+        margin: 0;
+    }
+
+    .markdown-section footer {
+        overflow: hidden;
+        padding: 0;
+        margin: 30px 0;
+    }
+
+    .markdown-section footer ul {
+        margin: 30px 0;
+        padding: 0;
+        list-style: none;
+    }
 </style>
 <style>
-    body , * {
+    body, * {
         margin: 0;
         padding: 0;
 
         box-sizing: border-box;
     }
-
 
 
 </style>
