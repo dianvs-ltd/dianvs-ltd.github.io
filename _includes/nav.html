@@ -3,46 +3,46 @@
         <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/1.html">安装店卫士</a>
         </div>
-          <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/2.html">注册店卫士</a>
         </div>
-          <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/dianvsandluminati.html">店卫士如何配置luminati</a>
         </div>
-           <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/3.html">跨境电商企业为什么都需要用店卫士</a>
         </div>
-          <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/10.html">跨境防关联，看这一篇就够了</a>
         </div>
-           <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/20.html">跨境店铺防关联-储存选项</a>
         </div>
-           <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/21.html">跨境店铺防关联-时区篇</a>
         </div>
-           <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/22.html">跨境店铺防关联-硬件指纹：WebGL篇</a>
         </div>
-           <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/23.html">跨境店铺防关联-硬件指纹：AudioContext</a>
         </div>
-          <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/24.html">跨境防关联-硬件指纹: Canvas篇</a>
         </div>
-          <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/25.html">跨境防关联-媒体设备篇</a>
         </div>
-             <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/26.html">跨境防关联-javascript篇</a>
         </div>
-                <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/27.html">跨境店铺防关联-字体篇</a>
         </div>
-                <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/28.html">跨境店铺防关联-地理位置</a>
         </div>
-              <div class="page_nav_sub">
+        <div class="page_nav_sub">
             <a class="page_nav_sub_name" href="{{site.baseurl}}/doc/29.html">跨境店铺防关联-WebRTC篇</a>
         </div>
     </div>
@@ -112,36 +112,27 @@
     }
 
     .page_nav_sub {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-
         border-bottom: 1px solid #e9e9e9;
-
     }
 
     .page_nav_sub_name {
-        width: 248px;
-        height: 36px;
+        width: 300px;
+        min-height: 36px;
         background: #ffffff;
         border-radius: 3px;
 
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        position: relative;
 
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: normal;
+        word-break: break-all;
 
         font-size: 14px;
         color: #999999;
-        line-height: 78px;
+        line-height: 20px;
 
-        padding-left: 40px;
+        padding: 8px 40px;
 
-        margin: 7px 0;
+        display: flex;
     }
 
     .page_nav_sub_name:before {
@@ -150,11 +141,14 @@
         width: 6px;
         height: 6px;
         background: #999999;
-        margin-right: 9px;
 
         flex-shrink: 0;
 
         border-radius: 3px;
+
+        position: absolute;
+        left: 20px;
+        top: 16px;
     }
 
     .page_nav_sub_name_active {
@@ -180,6 +174,7 @@
         margin: 7px 0;
     }
 
+
     .page_nav_sub_name_active:before {
         content: ' ';
         display: block;
@@ -192,6 +187,16 @@
         flex-shrink: 0;
         border-radius: 3px;
     }
+
+
+    .page_nav .page_nav{
+        padding-left: 20px;
+    }
+
+    .page_nav .page_nav .page_nav_sub_name{
+        width: 280px;
+    }
+
 
 
 </style>

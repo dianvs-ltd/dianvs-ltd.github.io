@@ -8,6 +8,10 @@ layout: home
 </div>
 
  {%- include nav.html -%} 
+
+<script>
+window.location.assign('/doc/1.html')
+</script>
  
  <style>
  .body-nav {
