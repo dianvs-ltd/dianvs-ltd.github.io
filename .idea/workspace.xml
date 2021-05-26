@@ -3,20 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0974e2-4d8e-4b37-b620-1a4b8e6f1241" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/1.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/10.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/10.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/2.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/20.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/20.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/21.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/21.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/22.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/22.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/25.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/25.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/26.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/26.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/27.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/27.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/28.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/28.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/29.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/29.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/3.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/config.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/config.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/dianvsandluminati.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/dianvsandluminati.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/1.md" beforeDir="false" afterPath="$PROJECT_DIR$/video/1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/2.md" beforeDir="false" afterPath="$PROJECT_DIR$/video/2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/3.md" beforeDir="false" afterPath="$PROJECT_DIR$/video/3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/4.md" beforeDir="false" afterPath="$PROJECT_DIR$/video/4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/5.md" beforeDir="false" afterPath="$PROJECT_DIR$/video/5.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +169,7 @@
       <workItem from="1615010150196" duration="4479000" />
       <workItem from="1615016528524" duration="2080000" />
       <workItem from="1622024514582" duration="29000" />
-      <workItem from="1622024555083" duration="5416000" />
+      <workItem from="1622024555083" duration="5472000" />
     </task>
     <servers />
   </component>
