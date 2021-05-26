@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "店卫士 + Luminati"
-keywords: 店卫士 Luminati
-description: 店卫士安装，配合luminati
+keywords: "店卫士 Luminati"
+description: "店卫士安装，配合luminati"
 page_excerpts: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "店卫士创建新VM配置文件"
-keywords: 店卫士 创建新VM配置文件
-description: 店卫士创建新VM配置文件 店卫士
+keywords: "店卫士 创建新VM配置文件"
+description: "店卫士创建新VM配置文件 店卫士"
 page_excerpts: true
 
 # 店卫士创建新VM配置文件
