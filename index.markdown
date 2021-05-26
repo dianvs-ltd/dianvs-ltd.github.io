@@ -2,16 +2,16 @@
 layout: home
 ---
 
+<script>
+window.location.assign('/doc/1.html')
+</script>
+
 <div class="doc-header">
     <a href="{{site.baseurl}}/video.html"><img src="{{site.baseurl}}/assets/doc/tl.png" class="doc-header-png"/></a>
     <a href="{{site.baseurl}}"><img src="{{site.baseurl}}/assets/doc/tr.png" class="doc-header-png"/></a>
 </div>
 
  {%- include nav.html -%} 
-
-<script>
-window.location.assign('/doc/1.html')
-</script>
  
  <style>
  .body-nav {

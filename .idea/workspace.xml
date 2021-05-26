@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e0974e2-4d8e-4b37-b620-1a4b8e6f1241" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/doc.dianvs.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doc.dianvs.com.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/1.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +166,7 @@
       <workItem from="1615010150196" duration="4479000" />
       <workItem from="1615016528524" duration="2080000" />
       <workItem from="1622024514582" duration="29000" />
-      <workItem from="1622024555083" duration="2375000" />
+      <workItem from="1622024555083" duration="2573000" />
     </task>
     <servers />
   </component>
